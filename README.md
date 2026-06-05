@@ -1,7 +1,7 @@
 # TP GitHub Actions — CI/CD et automatisation
 
-**Durée estimée :** 6h  
-**Prérequis :** Git, GitHub, bases Bash ou PowerShell (TPs précédents)  
+**Durée estimée :** 6h
+**Prérequis :** Git, GitHub, bases Bash ou PowerShell (TPs précédents)
 **Environnement :** tout OS avec Git installé et un compte GitHub actif
 
 ---
@@ -198,19 +198,19 @@ Ouvrez le fichier `.github/workflows/ci.yml` déjà présent dans ce repo.
 Répondez aux questions suivantes **sans modifier le fichier** :
 
 1. Sur quelle(s) branche(s) ce workflow se déclenche-t-il ?
-# sur la branch main 
+# sur la branch main
 
 2. Combien de jobs contient-il ?
 
-# un job 
+# un job
 3. Sur quel système d'exploitation tourne-t-il ?
 
-# Ubuntu 
+# Ubuntu
 4. Quelle action installe Python ?
 
 # requirements.txt
 5. Quelle commande lance les tests ?
-# runs on 
+# runs on
 
 Vérifiez vos réponses en allant dans l'onglet **Actions** de votre repo GitHub après votre premier push.
 
@@ -251,7 +251,7 @@ Commitez et pushez. Observez l'exécution dans l'onglet **Actions**.
 
 > ✏️ **À vous**
 >
-> Ajoutez un step qui affiche la date et l'heure du runner avec `date`.  
+> Ajoutez un step qui affiche la date et l'heure du runner avec `date`.
 > Puis déclenchez le workflow **manuellement** depuis l'interface GitHub (bouton "Run workflow").
 
 <details>
