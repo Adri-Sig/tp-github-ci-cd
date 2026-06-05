@@ -12,4 +12,12 @@ repos:
       - id: trailing-whitespace      # supprime les espaces en fin de ligne
       - id: end-of-file-fixer        # ajoute un saut de ligne en fin de fichier
       - id: check-yaml               # valide les fichiers YAML (vos workflows !)
-      - id: check-merge-conflict     # bloque si des marqueurs de conflit Git traînent
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: [--maxkb=500]
+
+  - repo: https://github.com/pycqa/isort
+    rev: 5.13.2
+    hooks:
+      - id: isort                    # trie automatiquement les imports Python
+        files: ressources/.*\.py$# bloque si des marqueurs de conflit Git traînent
