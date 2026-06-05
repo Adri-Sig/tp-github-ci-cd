@@ -1,0 +1,21 @@
+
+
+# Syntaxe : <pattern de fichier>  @Adri-Sig
+
+# Par défaut : tout changement requiert une review de ces personnes
+*                          @Adri-Sig
+
+# Les workflows CI/CD ne peuvent être modifiés que par le lead DevOps
+.github/workflows/         @Adri-Sig
+
+
+# Le fichier de dépendances requiert une validation technique
+ressources/requirements.txt  @Adri-Sig
+.github/ @Adri-Sig
+
+ressources/app.py @Adri-Sig
+
+
+# Les fichiers de sécurité requièrent une double validation
+.github/dependabot.yml     @Adri-Sig
+.github/CODEOWNERS         @Adri-Sig
