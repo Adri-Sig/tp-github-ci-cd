@@ -40,7 +40,7 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: "DevAppAdrien"
-          publish-profile: ${{ secrets.azureWebAppPublishProfile }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: ressources/
 
   # ── Job 3 : Production ────────────────────────────────────────────
@@ -58,5 +58,4 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: "DevAppAdrien"
-          publish-profile: ${{ secrets.azureWebAppPublishProfile }}
-          package: ressources/
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
